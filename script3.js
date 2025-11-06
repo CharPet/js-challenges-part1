@@ -10,13 +10,16 @@ function add() {
 }
 
 function subtract() {
-  sumEl.textContent = "Sum: " + (num1 - num2);
+  let result = num1 - num2;
+  sumEl.textContent = "Sum: " + result;
 }
 
 function divide() {
-  sumEl.textContent = "Sum: " + num1 / num2;
+  let result = num1 / num2;
+  sumEl.textContent = "Sum: " + result;
 }
 
 function multiply() {
-  sumEl.textContent = "Sum: " + num1 * num2;
+  let result = num1 * num2;
+  sumEl.textContent = "Sum: " + result;
 }

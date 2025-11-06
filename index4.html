@@ -4,6 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style4.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="table">
+      <div id="scoreboard">
+        <div class="scoreboard-parts">
+          <p class="teams">HOME</p>
+          <div class="background" id="backgroundBorderHome">
+            <span class="score" id="scoreHome"></span>
+          </div>
+          <div class="button-layer">
+            <button class="btn" onclick="addOneHome()">+1</button>
+            <button class="btn" onclick="addTwoHome()">+2</button>
+            <button class="btn" onclick="addThreeHome()">+3</button>
+          </div>
+        </div>
+
+        <div class="scoreboard-parts">
+          <p class="teams">GUEST</p>
+          <div class="background" id="backgroundBorderGuest">
+            <span class="score" id="scoreGuest"></span>
+          </div>
+          <div class="button-layer">
+            <button class="btn" onclick="addOneGuest()">+1</button>
+            <button class="btn" onclick="addTwoGuest()">+2</button>
+            <button class="btn" onclick="addThreeGuest()">+3</button>
+          </div>
+        </div>
+      </div>
+      <div id="secondaryScores">
+        <div id="period">
+          <span id="period-label">Period: </span>
+          <span id="period-value"></span>
+          <button class="btn" id="period-button" onclick="nextPeriod()">
+            +1
+          </button>
+        </div>
+        <div id="fouls">
+          <span id="fouls-label">Fouls: </span>
+          <span id="fouls-value"></span>
+          <button class="btn" id="fouls-button" onclick="nextFoul()">+1</button>
+        </div>
+        <div id="time">
+          <span id="time-label">Time: </span>
+          <span id="time-value"></span>
+        </div>
+      </div>
+      <button class="btn" id="resetButton" onclick="resetScores()">
+        New Game
+      </button>
+    </div>
+    <script src="script4.js"></script>
+  </body>
 </html>
